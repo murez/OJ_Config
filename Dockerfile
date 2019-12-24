@@ -1,4 +1,4 @@
-FROM daocloud.io/nginx:mainline-alpine
+FROM nginx
 
 MAINTAINER eastpiger @ Geek Pie Association
 
