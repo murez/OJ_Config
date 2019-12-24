@@ -4,7 +4,7 @@ MAINTAINER eastpiger @ Geek Pie Association
 
 EXPOSE 80 443
 
-COPY . /etc/nginx/
+COPY ./nginx.conf /etc/nginx/
 RUN chmod +x /etc/nginx/loader.sh
 
 CMD /etc/nginx/loader.sh
