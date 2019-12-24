@@ -1,0 +1,10 @@
+FROM daocloud.io/nginx:mainline-alpine
+
+MAINTAINER eastpiger @ Geek Pie Association
+
+EXPOSE 80 443
+
+COPY . /etc/nginx/
+RUN chmod +x /etc/nginx/loader.sh
+
+CMD /etc/nginx/loader.sh
